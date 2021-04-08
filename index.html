@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	             <!-- --------meta------- -->
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1"  />
+      <meta http-equiv="X-UA_Compatible" content="IE-edge">
+	             <!-- stykesheet -->
+	  <link rel="stylesheet" type="text/css" href="css/class.css" media="all">
+                 <!--  ------Vendor-------  -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/a484bb0785.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,900&display=swap"rel="stylesheet"/>
+</head>
+<body>
+       
+    <div class="main">
+    	<div class="relative">
+    		<!--     start navbar -->
+    		<nav class="flex fixed">
+    			<div class="logo ">
+    				<h4 class="">My Portfolio</h4>
+    			</div>
+    			<ul class="flex mis br">
+    				<li><a href="#home">Home</a></li>
+    				<li><a href="#About">About</a></li>
+    				<li><a href="#skill">skills</a></li>
+    				<li><a href="#Medsos">Media</a></li>
+    			</ul>
+                <div class="container ">
+				  <div class="bar1"></div>
+				  <div class="bar2"></div>
+				  <div class="bar3"></div>
+				</div>
+
+		        <div class="nav ">
+		            <span><a href="#home"><i class="fas fa-home"></i></a></span>
+		            <span><a href="#About"><i class="fas fa-info"></i></a></span>
+		            <span><a href="#skill"><i class="fas fa-users"></i></a></span>
+		            <span><a href="#Medsos"><i class="fas fa-star"></i></a></span>
+		        </div>
+		    </nav>
+               <!--   end navbar -->
+			<ul id="vertical">
+    		<!-- home -->
+			<li class="home">
+    		<div class="" id="home">
+    			<div class="logo-home flex">
+					<div style="width:300px; height:300px; overflow:hidden; border-radius:50%; box-shadow:0px 0px 20px rgba(0,0,0,.7);" > 
+					<img src="img/a.jpg" alt="profile" width="300px">
+					</div>
+					<h2 class="Judul writer line-1">Firdaus Arifin</h2>
+    			</div>
+    		</div>
+			</li>
+    		<!-- about -->
+			<li class="About flex">
+            <div class="abot flex" id="About">
+				 <div class="about-box"  style=" color:white; width:50%; ">				 	
+				   <div class="about-title" style="width:100%; text-align: center; font-size: 3em; 
+				   "><h4  style="font-weight: 500;">About Me</h4></div>
+				 	<p style="font-size:1.4em; text-align:center; margin:0;">
+						my name is firdaus Arifin, graduated from SMK 13 Bandung majoring in software engineering, fresh graduates can say that my daily life is deepening my skills I am a person who has just been interested in the world of IT and is now looking for a valuable lesson in what is called life.Now I am learning Web Development,React,Nodejs,MySQL and CyberSecurity.often create websites that to improve my quality and penetration(cybersecurtiy)
+					 </p>
+				 </div>
+               </div>
+			</li>
+            <!-- skill -->
+			<div class="skill" id="skill">
+				<h1 style="width:100%; text-align:center; color: white; font-weight: 500; font-size: 3em; padding:5px 0;">Skill Set</h1>
+				<div class="bar learning" data-skill="javascript"></div>
+				<div class="bar back basic" data-skill="React"></div>
+				<div class="bar back intermediate" data-skill="nodejs"></div>
+				<div class="bar front advanced" data-skill="CSS3"></div>
+				<div class="bar front expert" data-skill="HTML5"></div>
+			  </div>
+			<!-- Our sosial media -->
+			<li class="sosmed">
+           <div class=" " id="Medsos" >
+           	 	<h4 style="width:100%; text-align:center; color: white; font-weight: 500; font-size: 1.6em; padding:5px 0;">Our Social Media</h4>
+           	 	<div class="icon-sosmed ">
+           	 		<a href="https://www.instagram.com/_forceki/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+           	 		<a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+           	 		<a href="https://www.linkedin.com/in/forceki/" target="_blank" rel="noopener noreferrer" ><i class="fab fa-linkedin-in"></i></a>
+           	 	</div>
+           </div>
+		   </li>
+		   </ul>
+
+		</div>
+		
+    </div>
+    
+
+       <!--    footer -->
+    <footer class="footer" id="footer">
+         <p >Portfolio</p>
+         <p>(by : Firdaus Arifin)</p>
+    </footer>
+       <!--  ------Vendor------ -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+  <script>
+	    
+	    AOS.init({
+	  disable: function() {
+	    var maxWidth = 800;
+	    return window.innerWidth < maxWidth;
+	  }
+	});
+  </script>
+</body>
+</html>
+

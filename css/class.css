@@ -1,0 +1,457 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+  padding:0;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #264653;
+	margin:0;
+  
+}
+
+nav{
+  top:0;
+	justify-content:space-around;
+	width:100%;
+	align-items:center;
+	background:transparent  ;
+	padding:20px 0;
+	transition: background 250ms ease-in;
+	overflow: hidden;
+  z-index:105;
+}
+ 
+ .logo{
+ 	color:#E9C46A;
+ 	font-size:1.4em;
+ }
+
+nav ul {
+ 	display:flex;
+ 	list-style: none;
+ 	width: 40%;
+  margin-left:450px;
+ 	justify-content:space-evenly;
+ }
+
+ nav ul.br li a{
+ 	color:#F2DDAB;
+ 	text-decoration: none;
+ 	font-size: 1.3em;
+ }
+
+ ul.br li:first-child {
+  opacity:0;
+ }
+
+ ul.br li:first-child.fade{
+  opacity:1;
+ }
+
+ nav ul li a:hover{
+  color:#f1f0f0;
+ }
+
+  .nav-scrolled {
+  color: #333;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/*icon*/
+div.nav{
+  display:none;
+  margin:0;
+} 
+
+div span{
+  height:50px;
+  padding:10px;
+  margin:10px 0;
+  border-radius:50px;
+  background:rgba(255,255,255, 0.1);
+  text-align:center;
+}
+
+ div span a{
+  text-decoration: none;
+ }
+
+ .nav .fas{
+  color:white;
+ }
+
+/*menu*/
+
+.container {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 28px;
+  height: 3px;
+  background-color:white;
+  margin: 6px 0;
+  transition: 0.2s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(45deg) translate(-1px,-1px);
+  transform: rotate(45deg) translate(-1px, -1px);
+   transform-origin:0 0;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(-45deg) translate(0px, 0px);
+  transform: rotate(-45deg) translate(0px, 0px);
+   transform-origin:0 100%;
+}
+
+
+.logo h4 {
+  overflow: hidden;
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+.line-1{
+  width: 7em;
+  margin: 50px auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 3em;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+  font-weight: 500;
+}
+
+
+.writer{
+animation: typewriter 3s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 7em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+/*home*/
+
+.home{
+	width:100%;
+
+}
+
+div.logo-home{
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height:100vh;
+  
+}
+
+.logo-home img{
+ transform:translate(0px,-100px);
+}
+
+.About{
+  width:100%;
+  padding:120px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+div.abot{
+  height:80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill{
+  width: 50%;
+  margin: 50px auto;
+  height:60vh;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #FFF;
+  font-weight:600;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #ffec82;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #ff25ff;
+}
+.bar.back::before{
+  background-color: #53bff5;
+}
+
+.bar.learning::before{
+  width: calc(40% - 10px);
+}
+.bar.basic::before{
+  width: calc(20% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(20% - 10px);
+}
+.bar.advanced::before{
+  width: calc(70% - 10px);
+}
+.bar.expert::before{
+  width: calc(70% - 10px);
+}
+
+
+
+li.sosmed{
+  width: 100%;
+  padding:100px 0;
+  height:40vh;
+  text-align:center;
+  font-size:1.5em;
+  color:#E9C46A;
+}
+
+div.icon-sosmed{
+  margin-top:50px;
+  margin-bottom:100px;
+  font-size:70px;
+}
+
+div.icon-sosmed .fab{
+  margin:0 20px;
+  color: #E9C46A;
+}
+
+div.icon-sosmed .fab:hover{  
+  color: #F2DDAB;
+}
+.footer{
+width:100%;
+padding:15px;
+text-align: center;
+background-color: #E76F51;
+color: #264653;
+font-size:15px;
+position:fixed;
+bottom:0;
+}
+
+.footer p{
+margin:7px 0;
+letter-spacing:2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+.none{
+  display: none;
+}
+
+
+.display{
+  display: none;
+}
+
+.flex{
+	display:flex;
+}
+
+.fixed{
+	position:fixed;
+}
+
+.relative{
+	position:relative;
+}
+
+.overflow{
+  overflow: hidden;
+}
+
+.overflow-x{
+  overflow-x:hidden;
+}
+
+ div.hide{
+  height:100%;
+  width:100%;
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  display: block;
+  z-index:109;
+  
+}
+
+ div.dark {
+
+    filter: blur(10px);
+    display: inline-block;
+    }
+
+
+@media screen and (max-width:890px ){
+
+  nav ul.br {
+      width: 50%;
+      margin-left:200px;
+  } 
+  
+    
+
+}
+
+@media screen and (max-width:675px ){
+	/*navbar mobile*/
+
+
+ 	nav ul.mis {
+      display: block;
+      display: none;
+    }
+
+  div.nav{
+    position:fixed;
+    right:30px;
+    top:9%;
+    height:100px;
+    display:flex;
+    flex-direction:column;
+    display:none;
+    opacity:0;
+    transition:0.5s;
+  }
+
+  div.appear{
+    display:inline-flex;
+    opacity:1;
+  }
+
+ 	.container{
+ 		display:block;
+ 		position:fixed;
+ 		top:2%;
+ 		right:30px;
+ 	}
+/*home*/
+
+
+  
+ 
+ }
+ @media screen and (min-width:500px ) and (max-width:1000px){
+
+         div i.icon{
+        cursor: pointer;
+        margin-right:0px;
+        margin-left:10px;
+       }
+
+
+ }
+ @media screen and (max-width:558px ){
+   
+      
+         div i.icon{
+        cursor: pointer;
+        margin-right:0px;
+        margin-left:10px;
+       }
+
+       li.sosmed{
+        font-size:1.1em;
+
+       }
+
+        div.icon-sosmed{
+          align-items:flex-start;
+          margin-top:50px;
+      font-size:50px;
+    }
+     
+} 
