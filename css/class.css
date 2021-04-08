@@ -175,7 +175,7 @@ div.logo-home{
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height:100vh;
+  height:100%;
   
 }
 
@@ -191,7 +191,7 @@ div.logo-home{
 }
 
 div.abot{
-  height:80vh;
+  height:100%;
   justify-content: center;
   align-items: center;
 }
@@ -199,7 +199,7 @@ div.abot{
 .skill{
   width: 50%;
   margin: 50px auto;
-  height:60vh;
+  height:60%;
 }
 @keyframes load{
   from {
